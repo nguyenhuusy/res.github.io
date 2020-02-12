@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width:992px) {
+    body {
+        background-color: white;
+    }
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty {
+    background: #0984e3;
+    padding: 5px;
+    height: 20px;
+}
+
+header {
+    background: #74b9ff;
+    padding: 50px;
+}
+
+.main-feature {
+    display: flex;
+    width: 100%;
+    margin: 0;
+
+}
+
+.feature-first {
+    background: #fdcb6e;
+    width: calc(100% / 3);
+    padding: 50px 0;
+}
+.feature-below {
+    width: calc(100% * 2 / 3);
+    display: flex;
+}
+.feature-second {
+    background: #dfe6e9;
+    width: calc(100% / 2);
+    padding: 50px 0;
+}
+
+.feature-third {
+    background: #fd79a8;
+    width: calc(100% / 2);
+    padding: 50px 0;
+}
+
+.sign-up {
+    background: #ffeaa7;
+    padding: 50px;
+}
+
+.content {
+    background: #b2bec3;
+    padding: 50px;
+}
+
+
+.header-text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.main-feasign {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:401px) and (max-width: 992px) {
+    .content {
+        order: 2;
+    }
+
+    .main-feasign {
+        order: 3;
+        
+    }
+
+    header {
+        order: 1;
+    }
+    .sign-up {
+        order: 1;
+        width: 49.2%;
+        position: absolute;
+        
+    }
+    .main-feature {
+        flex-direction: column;
+        order: 2;
+    }
+    .feature-below {
+        width: 100%;
+    }
+    .feature-second {
+        order: 2;
+        /*width: calc(100% * 3 / 2);*/
+    }
+    .feature-third {
+        order: 1;
+        /*width: calc(100% * 3 / 2);*/
+    }
+    .feature-first {
+        width: 50%;
+        margin-left: 50%;
+    }
+    
+
+}
+
+@media (max-width: 400px) {
+    .content {
+        order: 2;
+    }
+
+    .main-feasign {
+        order: 3;
+    }
+
+    header {
+        order: 1;
+    }
+
+    .sign-up {
+        order: 4;
+    }
+
+    .main-feature {
+        order: 5;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-first {
+        width: 100%;
+        
+    }
+
+    .feature-second {
+        width: 100%;
+       
+    }
+
+    .feature-third {
+        width: 100%;
+        
+    }
+    .feature-below {
+        flex-direction: column;
+        width: 100%;
+    }
+}
